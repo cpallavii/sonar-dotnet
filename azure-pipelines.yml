@@ -23,12 +23,12 @@ variables:
   - name: vsVersion
     value: '17.0'
 
-resources:
-  repositories:
-    - repository: pipelines-yaml-templates
-      type: git
-      name: pipelines-yaml-templates
-      ref:  refs/tags/v1.0.13
+#resources:
+#  repositories:
+#    - repository: pipelines-yaml-templates
+#      type: git
+#      name: pipelines-yaml-templates
+#      ref:  refs/tags/v1.0.13
 
 stages:
 - template: stage-with-burgr-notifications.yml@pipelines-yaml-templates
